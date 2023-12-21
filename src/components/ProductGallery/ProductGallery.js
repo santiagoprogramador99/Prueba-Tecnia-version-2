@@ -1,6 +1,9 @@
 import React from 'react';
-import './styles/productGallery.scss';
-import images from '../../data/products.json';  // Importa las imágenes desde tu JSON
+// Adjust the import based on the file location
+
+import './ProductGallery.scss';
+
+
 
 const ProductGallery = () => {
   return (

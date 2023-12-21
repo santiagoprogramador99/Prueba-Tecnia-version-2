@@ -1,11 +1,9 @@
 // App.js
 import Menu from './components/Menu/Menu';
-import ProductsDetails from './components/ProductsDetails/ProductsDetails';
-
-i
+import './components/ProductDetails/ProductDetails.scss'; // Fix the import path
 import ProductGallery from './components/ProductGallery/ProductGallery';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
-import './styles/App.scss';  // Importa los estilos de App
+import './styles/App.scss';
 
 function App() {
   return (
@@ -14,7 +12,7 @@ function App() {
 
       <Menu />
       <div className="section">
-        <ProductsDetails />
+        <ProductDetails /> {/* Correct the component name here */}
       </div>
 
       <div className="section">
@@ -33,6 +31,9 @@ function App() {
 }
 
 export default App;
+
+
+  
 
 
 

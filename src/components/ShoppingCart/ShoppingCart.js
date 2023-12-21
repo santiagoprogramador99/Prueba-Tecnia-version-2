@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import './ShoppingCart/ShoppingCart.scss'; // Adjust the import based on the file location
+import './ShoppingCart.scss';// Adjust the import based on the file location
 
 // Rest of your code
 
