@@ -1,20 +1,40 @@
 .menu {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-      li {
-        margin-right: 15px;
-        cursor: pointer;
-        transition: color 0.3s ease;
-  
+  background-color: #2c3e50; /* Fondo del menú */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px; /* Espaciado interno del menú */
+  border-radius: 5px; /* Bordes redondeados */
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Espacio equitativo entre elementos */
+
+    li {
+      margin-right: 15px;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+
+      &:hover {
+        color: #3498db; /* Color del texto al pasar el ratón */
+        transform: translateY(-3px); /* Efecto de levantamiento */
+      }
+
+      &:last-child {
+        margin-right: 0; /* Elimina el margen derecho del último elemento */
+      }
+
+      a {
+        text-decoration: none;
+        color: #ecf0f1; /* Color del texto normal */
+        font-weight: bold; /* Texto en negrita */
+        font-size: 16px;
+
         &:hover {
-          color: #007bff;
+          color: #3498db; /* Cambia el color del texto al pasar el ratón */
         }
       }
     }
   }
+}

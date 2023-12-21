@@ -1,19 +1,47 @@
+// ProductGallery.scss
+
 .product-gallery {
+  .slider {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-  
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 5px;
-      margin-right: 10px;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-  
+    overflow-x: auto;
+    padding: 20px 0;
+
+    div {
+      width: calc(25% - 10px);
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+
       &:hover {
-        border-color: #007bff;
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      &:nth-child(n + 5) {
+        width: calc(50% - 10px); // Ajusta el ancho para dos elementos por fila
+      }
+
+      &:nth-child(n + 9) {
+        width: calc(100% - 10px); // Ajusta el ancho para una columna completa
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
+}
+

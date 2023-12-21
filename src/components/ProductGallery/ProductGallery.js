@@ -1,5 +1,5 @@
 import React from 'react';
-import productsData from '../../data/products.json'; // Ajusta la ruta según sea necesario
+import productsData from '../../data/products.json';  // Ajusta la ruta según sea necesario
 import './ProductGallery.scss';
 
 const ProductGallery = () => {
@@ -18,6 +18,9 @@ const ProductGallery = () => {
 }
 
 export default ProductGallery;
+
+
+
 
 
 

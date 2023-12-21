@@ -1,6 +1,38 @@
 [
-    { "url": "imagen1.jpg" },
-    { "url": "imagen2.jpg" },
-    { "url": "imagen3.jpg" }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Camisetas",
+    "image": "/images/camiseta.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pijamas",
+    "image": "/images/pijama.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ropa interior",
+    "image": "/images/ropa-interior.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chaquetas y Buzos",
+    "image": "/images/buso.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Joggers, pantalones y shorts",
+    "image": "/images/jogger.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Calzado",
+    "image": "/images/calzado.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Accesorios",
+    "image": "/images/accesorios.jpg"
+  }
+]
+

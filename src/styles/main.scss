@@ -1,0 +1,114 @@
+// Reset de estilos para normalizar el comportamiento entre navegadores
+@import 'normalize.css';
+
+// Variables globales para colores, fuentes, etc.
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Roboto', sans-serif;
+
+// Estilos globales
+body {
+  font-family: $font-family;
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+// Encabezado
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+// Menú
+.menu {
+  background-color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      margin-right: 15px;
+      cursor: pointer;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+        transform: translateY(-3px);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-weight: bold;
+        font-size: 16px;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Sección de contenido principal
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+// Pie de página
+footer {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 10px;
+  text-align: center;
+}
+
+// Media query para estilos responsivos
+@media screen and (max-width: 600px) {
+  // Ajustes de estilo para pantallas más pequeñas
+  header {
+    padding: 15px;
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .menu {
+    padding: 8px 15px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 8px;
+  }
+}
