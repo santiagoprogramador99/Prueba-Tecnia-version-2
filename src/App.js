@@ -1,6 +1,6 @@
 // App.js
 import Menu from './components/Menu/Menu';
-import './components/ProductDetails/ProductDetails.scss'; // Fix the import path
+import ProductDetails from './components/ProductDetails/ProductDetails'; // Fix the import path
 import ProductGallery from './components/ProductGallery/ProductGallery';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 import './styles/App.scss';

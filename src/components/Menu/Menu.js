@@ -1,25 +1,24 @@
 import React from 'react';
+import './Menu.scss';
+
+// Importa los datos de productos con las imágenes
+import productsData from '../../data/products.json';  // Ajusta la ruta según la ubicación real de tu archivo
 
 const Menu = () => {
   return (
     <nav className="menu">
       <ul>
-        <li className="menu-item">
-          <a href="#">Mujer</a>
-          <ul className="submenu">
-            <li><a href="#">Camisetas</a></li>
-            <li><a href="#">Pijamas</a></li>
-            <li><a href="#">Ropa interior</a></li>
-            <li><a href="#">Chaquetas y Buzos</a></li>
-            <li><a href="#">Joggers, pantalones y shorts</a></li>
-            <li><a href="#">Calzado</a></li>
-            <li><a href="#">Accesorios</a></li>
-          </ul>
-        </li>
+        {productsData.map((product) => (
+          <li className="menu-item" key={product.id}>
+            <a href="#">
+              {product.image && <img src={product.image} alt={product.name} />}
+              {product.name}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
 }
 
 export default Menu;
-
