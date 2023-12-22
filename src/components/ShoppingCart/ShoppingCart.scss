@@ -1,22 +1,62 @@
-/* ShoppingCart.scss */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 .shopping-cart {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-  
-    button {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: #0056b3;
-      }
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Ajuste de padding para pantallas más pequeñas */
+  margin-top: 20px;
+  border-radius: 12px;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+
+    i {
+      margin-right: 10px; /* Reducción del espacio entre el icono y el texto */
+      font-size: 20px; /* Reducción del tamaño de fuente del icono */
+    }
+
+    span {
+      font-size: 24px; /* Reducción del tamaño de fuente del texto */
+      color: #555;
     }
   }
-  
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px; /* Ajuste de padding para botón más pequeño */
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Reducción del tamaño de fuente del botón */
+    border-radius: 8px;
+    margin-top: 15px; /* Ajuste de margen superior */
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  // Estilos adicionales para pantallas pequeñas
+  @media screen and (max-width: 768px) {
+    h3 {
+      i {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}
+

@@ -2,37 +2,64 @@
   {
     "id": 1,
     "name": "Camisetas",
-    "image": "/images/camiseta.jpg"
+    "image": "/images/camiseta.jpg",
+    "description": "Camiseta de algodón de alta calidad",
+    "priceBefore": 100,
+    "priceNow": 70,
+    "discountPercentage": 30
   },
   {
     "id": 2,
     "name": "Pijamas",
-    "image": "/images/pijama.jpg"
+    "image": "/images/pijama.jpg",
+    "description": "Pijamas de  algodón de alta calidad",
+    "priceBefore": 100,
+    "priceNow": 90,
+    "discountPercentage": 10
   },
   {
     "id": 3,
     "name": "Ropa interior",
-    "image": "/images/ropa-interior.jpg"
+    "image": "/images/ropa-interior.jpg",
+    "description": "Ropa interior de alta calidad",
+    "priceBefore": 100,
+    "priceNow": 60,
+    "discountPercentage": 40
   },
   {
     "id": 4,
     "name": "Chaquetas y Buzos",
-    "image": "/images/buso.jpg"
+    "image": "/images/buso.jpg",
+    "description": "Chaquetas y buzos ",
+    "priceBefore": 100,
+    "priceNow": 60,
+    "discountPercentage": 40
   },
   {
     "id": 5,
     "name": "Joggers, pantalones y shorts",
-    "image": "/images/jogger.jpg"
+    "image": "/images/jogger.jpg",
+    "description": "Jogger pantalones y shorts",
+    "priceBefore": 100,
+    "priceNow": 95,
+    "discountPercentage": 5
   },
   {
     "id": 6,
     "name": "Calzado",
-    "image": "/images/calzado.jpg"
+    "image": "/images/calzado.jpg",
+    "description": "Calzado de dama",
+    "priceBefore": 100,
+    "priceNow": 60,
+    "discountPercentage": 40
   },
   {
     "id": 7,
     "name": "Accesorios",
-    "image": "/images/accesorios.jpg"
+    "image": "/images/accesorios.jpg",
+    "description": "Accesorios de alta gama",
+    "priceBefore": 100,
+    "priceNow": 60,
+    "discountPercentage": 40
   }
 ]
-

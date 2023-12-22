@@ -1,47 +1,66 @@
 // ProductGallery.scss
-
 .product-gallery {
-  .slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow-x: auto;
-    padding: 20px 0;
+  position: relative;
 
-    div {
-      width: calc(25% - 10px);
-      margin-bottom: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    font-family: 'Arial', sans-serif;
+    content: '';
+    display: inline-block;
+  }
+
+  .slick-prev::before {
+    content: '\2190';
+  }
+
+  .slick-next::before {
+    content: '\2192';
+  }
+
+  .slick-slider {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slick-slide {
+    img {
+      width: calc(100% - 40px);
+      max-height: 300px;  // Ajusta la altura máxima según tus necesidades
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
 
       &:hover {
-        transform: scale(1.05);
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.3s ease;
-
-        &:hover {
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-      }
-
-      &:nth-child(n + 5) {
-        width: calc(50% - 10px); // Ajusta el ancho para dos elementos por fila
-      }
-
-      &:nth-child(n + 9) {
-        width: calc(100% - 10px); // Ajusta el ancho para una columna completa
-      }
-
-      &:last-child {
-        margin-right: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       }
     }
   }
 }
+
 

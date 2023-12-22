@@ -5,7 +5,7 @@ class ProductDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      quantity: 1, // Valor inicial
+      quantity: 1,
     };
   }
 
@@ -14,13 +14,15 @@ class ProductDetails extends Component {
   };
 
   render() {
+    const { title, subtitle, priceBefore, priceNow, discountPercentage } = this.props.product;
+
     return (
       <div className="product-details">
-        <h2>Título del Producto</h2>
-        <p>Subtítulo</p>
-        <p>Precio Antes: $100</p>
-        <p>Precio Ahora: $80</p>
-        <p>% Descuento: 20%</p>
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+        <p>Precio Antes: ${priceBefore}</p>
+        <p>Precio Ahora: ${priceNow}</p>
+        <p>% Descuento: {discountPercentage}%</p>
         <label htmlFor="sizes">Tallas:</label>
         <select id="sizes">
           <option value="small">S</option>
@@ -42,4 +44,5 @@ class ProductDetails extends Component {
 }
 
 export default ProductDetails;
+
 

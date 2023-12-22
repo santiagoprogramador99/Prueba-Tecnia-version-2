@@ -1,12 +1,76 @@
-.products-details {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-  
-    h2 {
-      color: #007bff;
-    }
-  
-    /* Agregar más estilos según sea necesario */
+.product-details {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+
+  h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
+
+  p {
+    color: #555;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  select,
+  input {
+    width: 100%;
+    padding: 12px; /* Aumenté el padding para un aspecto más espacioso */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Bordes más redondeados */
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px; /* Ajusté el padding para un botón más grande */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  /* Estilo para el contenedor de botones adicionales u otras secciones */
+  .additional-section {
+    margin-top: 20px;
+
+    /* Estilo específico para los botones adicionales */
+    .additional-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+
+  /* Agregar más estilos según sea necesario */
+}
